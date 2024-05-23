@@ -116,9 +116,8 @@ const respond = (res, data) => {
 };
 
 // Start addon
-addon.listen(process.env.PORT || 3050, process.env.HOST || "127.0.0.1", () => {
-	console.log(
-		`Addon started on http://${process.env.HOST || "127.0.0.1"}:${process.env.PORT || 3050
-		}/manifest.json`
-	);
+// Start addon
+addon.listen(process.env.PORT || 4000, '0.0.0.0', () => {
+    console.log(`Addon started on http://0.0.0.0:${process.env.PORT || 4000}/manifest.json`);
 });
+
