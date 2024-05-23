@@ -27,10 +27,6 @@ addon.get("/configure", (req, res) => {
 	res.redirect(301, `${config.TITLOVI_API_ENDPOINT}/configure`);
 });
 
-addon.get("/:token/configure", (req, res) => {
-	res.redirect(301, `${config.TITLOVI_API_ENDPOINT}/configure`);
-});
-
 // Register addon with user config to Stremio
 addon.get("/:token?/manifest.json", ({ params: { token } } = req, res) => {
 	if (typeof token === "undefined") {
