@@ -23,7 +23,11 @@ addon.get("/", (req, res) => {
 });
 
 // Redirect to config page
-addon.get("/:token?/configure", (req, res) => {
+addon.get("/configure", (req, res) => {
+	res.redirect(301, `${config.TITLOVI_API_ENDPOINT}/configure`);
+});
+
+addon.get("/:token/configure", (req, res) => {
 	res.redirect(301, `${config.TITLOVI_API_ENDPOINT}/configure`);
 });
 
