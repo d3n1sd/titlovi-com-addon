@@ -2,7 +2,7 @@ module.exports = {
     LOGO_URL: 'https://titlovi-stremio-server.onrender.com/logo.png',
 
     // Subtitle server endpoint
-    TITLOVI_API_ENDPOINT: 'https://titlovi-stremio-server.onrender.com/',
+    TITLOVI_API_ENDPOINT: 'https://mojititlovi.onrender.com/',
 
     // ISO 639-2 language map for all available subtitle languages from titlovi.com
     // wiki: https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes
